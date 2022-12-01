@@ -83,7 +83,7 @@ Deepmind在2016年提出DDPG，全稱是：Deep Deterministic Policy Gradient,�
     * exploration的目的是探索潛在的更優策略，所以訓練過程中，我們為action的決策機制引入隨機噪聲：
     * 將action的決策從確定性過程變為一個隨機過程， 再從這個隨機過程中採樣得到action，下達給環境執行
 
-![ddpg_flowchart](ddpg_flowchart.png)
+![ddpg_flowchart](images/ddpg_flowchart.png)
 |:------:|
 |圖1-ddpg架構示意圖|
 
@@ -94,7 +94,7 @@ UO過程在時序上具備很好的相關性，可以使agent很好的探索具�
 
 整體的演算法的流程如下所示：
 
-![ddpg_algorithm](ddpg_algorithm.PNG)
+![ddpg_algorithm](images/ddpg_algorithm.PNG)
  
 ## DQN
 ### 設定與執行程式
@@ -109,14 +109,15 @@ python train_agent_dqn.py
 *	Max_EPISODES = 300, score>=30
 *	Result 
 
-![dqn_result](outputs/dqn_result.png)
+![dqn_result](outputs/dqn_result.
+)
 ![dqn_score](outputs/dqn_score.png)
 
 ### DQN介紹
 RL的任務基本是低維度輸入、低維度輸出，這是因為高維的問題難度實在太大了，很難收斂。因此，有人提出了DQN這個專門處理離散Action演算法，使得輸入維度可以擴展到高維空間。
 
 那我們該怎麼建立DQN，讓模型可以輸出Q值，又能輸出與最大Ｑ值對應的Aciton，達到在機械手臂的連續控制的目的呢？圖1為我們針對這個問題所提出的DQN架構。
-![dqn_result](dqn_arch.png)
+![dqn_result](images/dqn_arch.png)
 |:------:|
 |圖2-DQN架構示意圖|
 
@@ -130,7 +131,7 @@ $A(x,u|\theta^A)=-\dfrac{1}{2}(u-u(x|\theta^u))^TP(x|\theta^P)(u-u(x|\theta^u))$
 
 整體的演算法的流程如下所示：
 
-![dqn_algorithm](dqn_algorithm.png)
+![dqn_algorithm](images/dqn_algorithm.png)
  
 ## 參考資料
 * [Deep Deterministic Policy Gradient](https://arxiv.org/abs/1509.02971)
