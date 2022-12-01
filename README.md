@@ -109,8 +109,8 @@ python train_agent_dqn.py
 *	Max_EPISODES = 300, score>=30
 *	Result 
 
-![dqn_result](outputs/dqn_result.
-)
+![dqn_result](outputs/dqn_result.png)
+
 ![dqn_score](outputs/dqn_score.png)
 
 ### DQN介紹
